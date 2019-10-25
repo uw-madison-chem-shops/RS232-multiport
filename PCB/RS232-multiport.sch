@@ -1,0 +1,573 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "RS232-multiport"
+Date "2019-10-25"
+Rev "1.0.0"
+Comp "UW-Madison"
+Comment1 "Department of Chemistry"
+Comment2 "Blaise Thompson"
+Comment3 "bthompson@chem.wisc.edu"
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR04
+U 1 1 5CE4280B
+P 6500 3400
+F 0 "#PWR04" H 6500 3150 50  0001 C CNN
+F 1 "GND" H 6505 3227 50  0000 C CNN
+F 2 "" H 6500 3400 50  0001 C CNN
+F 3 "" H 6500 3400 50  0001 C CNN
+	1    6500 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 5CEC81FA
+P 7600 2100
+F 0 "#PWR010" H 7600 1850 50  0001 C CNN
+F 1 "GND" V 7605 1972 50  0000 R CNN
+F 2 "" H 7600 2100 50  0001 C CNN
+F 3 "" H 7600 2100 50  0001 C CNN
+	1    7600 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:DB9_Male_MountingHoles J1
+U 1 1 5CDD7044
+P 9300 1400
+F 0 "J1" V 9617 1356 50  0000 C CNN
+F 1 "DB9_Male_MountingHoles" V 9526 1356 50  0000 C CNN
+F 2 "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset9.90mm_Housed_MountingHolesOffset11.32mm" H 9300 1400 50  0001 C CNN
+F 3 " ~" H 9300 1400 50  0001 C CNN
+	1    9300 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5CE4FE8A
+P 7300 1450
+F 0 "C5" H 7350 1650 50  0000 L CNN
+F 1 "100n" H 7350 1550 50  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D6.3mm_H7.0mm_P2.50mm" H 7338 1300 50  0001 C CNN
+F 3 "~" H 7300 1450 50  0001 C CNN
+	1    7300 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5CE50F74
+P 5700 1450
+F 0 "C1" H 5815 1496 50  0000 L CNN
+F 1 "100n" H 5815 1405 50  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D6.3mm_H7.0mm_P2.50mm" H 5738 1300 50  0001 C CNN
+F 3 "~" H 5700 1450 50  0001 C CNN
+	1    5700 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 5CE50768
+P 7450 2100
+F 0 "C8" H 7450 2200 50  0000 L CNN
+F 1 "100n" H 7450 2000 50  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D6.3mm_H7.0mm_P2.50mm" H 7488 1950 50  0001 C CNN
+F 3 "~" H 7450 2100 50  0001 C CNN
+	1    7450 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 5CDD5B9F
+P 7450 1800
+F 0 "C7" H 7450 1900 50  0000 L CNN
+F 1 "100n" H 7450 1700 50  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D6.3mm_H7.0mm_P2.50mm" H 7488 1650 50  0001 C CNN
+F 3 "~" H 7450 1800 50  0001 C CNN
+	1    7450 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR09
+U 1 1 5D4C1C6E
+P 7600 1800
+F 0 "#PWR09" H 7600 1650 50  0001 C CNN
+F 1 "+5V" H 7615 1973 50  0000 C CNN
+F 2 "" H 7600 1800 50  0001 C CNN
+F 3 "" H 7600 1800 50  0001 C CNN
+	1    7600 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:DB9_Male_MountingHoles J2
+U 1 1 5CDD82E2
+P 9300 2900
+F 0 "J2" V 9617 2856 50  0000 C CNN
+F 1 "DB9_Male_MountingHoles" V 9526 2856 50  0000 C CNN
+F 2 "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset9.90mm_Housed_MountingHolesOffset11.32mm" H 9300 2900 50  0001 C CNN
+F 3 " ~" H 9300 2900 50  0001 C CNN
+	1    9300 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:DB9_Male_MountingHoles J3
+U 1 1 5DB54F69
+P 9300 4400
+F 0 "J3" V 9617 4356 50  0000 C CNN
+F 1 "DB9_Male_MountingHoles" V 9526 4356 50  0000 C CNN
+F 2 "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset9.90mm_Housed_MountingHolesOffset11.32mm" H 9300 4400 50  0001 C CNN
+F 3 " ~" H 9300 4400 50  0001 C CNN
+	1    9300 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:DB9_Male_MountingHoles J4
+U 1 1 5DB56252
+P 9300 5900
+F 0 "J4" V 9617 5856 50  0000 C CNN
+F 1 "DB9_Male_MountingHoles" V 9526 5856 50  0000 C CNN
+F 2 "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset9.90mm_Housed_MountingHolesOffset11.32mm" H 9300 5900 50  0001 C CNN
+F 3 " ~" H 9300 5900 50  0001 C CNN
+	1    9300 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface_UART:MAX232 U1
+U 1 1 5CDD3F49
+P 6500 2200
+F 0 "U1" H 6600 3350 50  0000 C CNN
+F 1 "MAX232" H 6700 3250 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 6550 1150 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/max232.pdf" H 6500 2300 50  0001 C CNN
+	1    6500 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5DBAEC7A
+P 6500 6400
+F 0 "#PWR06" H 6500 6150 50  0001 C CNN
+F 1 "GND" H 6505 6227 50  0000 C CNN
+F 2 "" H 6500 6400 50  0001 C CNN
+F 3 "" H 6500 6400 50  0001 C CNN
+	1    6500 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5DBAEC81
+P 7300 4000
+F 0 "#PWR08" H 7300 3750 50  0001 C CNN
+F 1 "GND" H 7305 3827 50  0000 C CNN
+F 2 "" H 7300 4000 50  0001 C CNN
+F 3 "" H 7300 4000 50  0001 C CNN
+	1    7300 4000
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5DBAEC87
+P 7300 4450
+F 0 "C6" H 7350 4650 50  0000 L CNN
+F 1 "100n" H 7350 4550 50  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D6.3mm_H7.0mm_P2.50mm" H 7338 4300 50  0001 C CNN
+F 3 "~" H 7300 4450 50  0001 C CNN
+	1    7300 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 5DBAEC93
+P 7450 5100
+F 0 "C10" H 7450 5200 50  0000 L CNN
+F 1 "100n" H 7450 5000 50  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D6.3mm_H7.0mm_P2.50mm" H 7488 4950 50  0001 C CNN
+F 3 "~" H 7450 5100 50  0001 C CNN
+	1    7450 5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 5DBAEC99
+P 7450 4800
+F 0 "C9" H 7450 4900 50  0000 L CNN
+F 1 "100n" H 7450 4700 50  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D6.3mm_H7.0mm_P2.50mm" H 7488 4650 50  0001 C CNN
+F 3 "~" H 7450 4800 50  0001 C CNN
+	1    7450 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 5DC11421
+P 9000 6300
+F 0 "#PWR016" H 9000 6050 50  0001 C CNN
+F 1 "GND" V 9005 6172 50  0000 R CNN
+F 2 "" H 9000 6300 50  0001 C CNN
+F 3 "" H 9000 6300 50  0001 C CNN
+	1    9000 6300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR015
+U 1 1 5DC11B23
+P 9000 4800
+F 0 "#PWR015" H 9000 4550 50  0001 C CNN
+F 1 "GND" V 9005 4672 50  0000 R CNN
+F 2 "" H 9000 4800 50  0001 C CNN
+F 3 "" H 9000 4800 50  0001 C CNN
+	1    9000 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 5DC14D28
+P 9000 3300
+F 0 "#PWR014" H 9000 3050 50  0001 C CNN
+F 1 "GND" V 9005 3172 50  0000 R CNN
+F 2 "" H 9000 3300 50  0001 C CNN
+F 3 "" H 9000 3300 50  0001 C CNN
+	1    9000 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 5DC151D9
+P 9000 1800
+F 0 "#PWR013" H 9000 1550 50  0001 C CNN
+F 1 "GND" V 9005 1672 50  0000 R CNN
+F 2 "" H 9000 1800 50  0001 C CNN
+F 3 "" H 9000 1800 50  0001 C CNN
+	1    9000 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5DBAEC9F
+P 7150 4000
+F 0 "C4" H 7265 4046 50  0000 L CNN
+F 1 "100n" H 7265 3955 50  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D6.3mm_H7.0mm_P2.50mm" H 7188 3850 50  0001 C CNN
+F 3 "~" H 7150 4000 50  0001 C CNN
+	1    7150 4000
+	0    1    -1   0   
+$EndComp
+$Comp
+L Interface_UART:MAX232 U2
+U 1 1 5DBAECA5
+P 6500 5200
+F 0 "U2" H 6600 6350 50  0000 C CNN
+F 1 "MAX232" H 6700 6250 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 6550 4150 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/max232.pdf" H 6500 5300 50  0001 C CNN
+	1    6500 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 4000 7000 4000
+$Comp
+L power:+5V #PWR05
+U 1 1 5DC4EAF7
+P 6500 4000
+F 0 "#PWR05" H 6500 3850 50  0001 C CNN
+F 1 "+5V" H 6515 4173 50  0000 C CNN
+F 2 "" H 6500 4000 50  0001 C CNN
+F 3 "" H 6500 4000 50  0001 C CNN
+	1    6500 4000
+	1    0    0    -1  
+$EndComp
+Connection ~ 6500 4000
+$Comp
+L Device:C C3
+U 1 1 5DC54827
+P 7150 1000
+F 0 "C3" H 7265 1046 50  0000 L CNN
+F 1 "100n" H 7265 955 50  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D6.3mm_H7.0mm_P2.50mm" H 7188 850 50  0001 C CNN
+F 3 "~" H 7150 1000 50  0001 C CNN
+	1    7150 1000
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5DC5678D
+P 7300 1000
+F 0 "#PWR07" H 7300 750 50  0001 C CNN
+F 1 "GND" H 7305 827 50  0000 C CNN
+F 2 "" H 7300 1000 50  0001 C CNN
+F 3 "" H 7300 1000 50  0001 C CNN
+	1    7300 1000
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:+5V #PWR03
+U 1 1 5DC57D70
+P 6500 1000
+F 0 "#PWR03" H 6500 850 50  0001 C CNN
+F 1 "+5V" H 6515 1173 50  0000 C CNN
+F 2 "" H 6500 1000 50  0001 C CNN
+F 3 "" H 6500 1000 50  0001 C CNN
+	1    6500 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 1000 7000 1000
+Connection ~ 6500 1000
+Wire Wire Line
+	9000 5700 8500 5700
+Wire Wire Line
+	8500 5700 8500 5900
+Wire Wire Line
+	8500 5900 7300 5900
+Wire Wire Line
+	9000 5900 8600 5900
+Wire Wire Line
+	8600 5900 8600 5500
+Wire Wire Line
+	8600 5500 7300 5500
+NoConn ~ 9000 5500
+NoConn ~ 9000 5600
+NoConn ~ 9000 5800
+NoConn ~ 9000 6000
+NoConn ~ 9000 6100
+NoConn ~ 9000 6200
+$Comp
+L power:GND #PWR020
+U 1 1 5DC60239
+P 9300 6500
+F 0 "#PWR020" H 9300 6250 50  0001 C CNN
+F 1 "GND" H 9305 6327 50  0000 C CNN
+F 2 "" H 9300 6500 50  0001 C CNN
+F 3 "" H 9300 6500 50  0001 C CNN
+	1    9300 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR019
+U 1 1 5DC60C3F
+P 9300 5000
+F 0 "#PWR019" H 9300 4750 50  0001 C CNN
+F 1 "GND" H 9305 4827 50  0000 C CNN
+F 2 "" H 9300 5000 50  0001 C CNN
+F 3 "" H 9300 5000 50  0001 C CNN
+	1    9300 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR018
+U 1 1 5DC61588
+P 9300 3500
+F 0 "#PWR018" H 9300 3250 50  0001 C CNN
+F 1 "GND" H 9305 3327 50  0000 C CNN
+F 2 "" H 9300 3500 50  0001 C CNN
+F 3 "" H 9300 3500 50  0001 C CNN
+	1    9300 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR017
+U 1 1 5DC61A2A
+P 9300 2000
+F 0 "#PWR017" H 9300 1750 50  0001 C CNN
+F 1 "GND" H 9305 1827 50  0000 C CNN
+F 2 "" H 9300 2000 50  0001 C CNN
+F 3 "" H 9300 2000 50  0001 C CNN
+	1    9300 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 5700 8000 5700
+Wire Wire Line
+	8000 5700 8000 4200
+Wire Wire Line
+	8000 4200 9000 4200
+Wire Wire Line
+	9000 4400 8100 4400
+Wire Wire Line
+	8100 4400 8100 5300
+Wire Wire Line
+	8100 5300 7300 5300
+NoConn ~ 9000 4700
+NoConn ~ 9000 4600
+NoConn ~ 9000 4500
+NoConn ~ 9000 4300
+NoConn ~ 9000 4100
+NoConn ~ 9000 4000
+Wire Wire Line
+	9000 2700 8500 2700
+Wire Wire Line
+	8500 2700 8500 2900
+Wire Wire Line
+	8500 2900 7300 2900
+Wire Wire Line
+	9000 2900 8600 2900
+Wire Wire Line
+	8600 2900 8600 2500
+Wire Wire Line
+	8600 2500 7300 2500
+Wire Wire Line
+	7300 2700 8000 2700
+Wire Wire Line
+	8000 2700 8000 1200
+Wire Wire Line
+	8000 1200 9000 1200
+Wire Wire Line
+	9000 1400 8100 1400
+Wire Wire Line
+	8100 1400 8100 2300
+Wire Wire Line
+	8100 2300 7300 2300
+$Comp
+L power:+5V #PWR011
+U 1 1 5DC7F129
+P 7600 4800
+F 0 "#PWR011" H 7600 4650 50  0001 C CNN
+F 1 "+5V" V 7615 4928 50  0000 L CNN
+F 2 "" H 7600 4800 50  0001 C CNN
+F 3 "" H 7600 4800 50  0001 C CNN
+	1    7600 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 5DC7FC36
+P 7600 5100
+F 0 "#PWR012" H 7600 4850 50  0001 C CNN
+F 1 "GND" H 7605 4927 50  0000 C CNN
+F 2 "" H 7600 5100 50  0001 C CNN
+F 3 "" H 7600 5100 50  0001 C CNN
+	1    7600 5100
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5DBAEC8D
+P 5700 4450
+F 0 "C2" H 5815 4496 50  0000 L CNN
+F 1 "100n" H 5815 4405 50  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D6.3mm_H7.0mm_P2.50mm" H 5738 4300 50  0001 C CNN
+F 3 "~" H 5700 4450 50  0001 C CNN
+	1    5700 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR02
+U 1 1 5DC8D7F2
+P 1500 3200
+F 0 "#PWR02" H 1500 3050 50  0001 C CNN
+F 1 "+5V" V 1515 3328 50  0000 L CNN
+F 2 "" H 1500 3200 50  0001 C CNN
+F 3 "" H 1500 3200 50  0001 C CNN
+	1    1500 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5DC8E9F7
+P 1500 2950
+F 0 "#PWR01" H 1500 2700 50  0001 C CNN
+F 1 "GND" V 1505 2822 50  0000 R CNN
+F 2 "" H 1500 2950 50  0001 C CNN
+F 3 "" H 1500 2950 50  0001 C CNN
+	1    1500 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1500 3000 1500 2950
+Connection ~ 1500 2950
+Wire Wire Line
+	1500 2950 1500 2900
+$Comp
+L arduino:Arduino_Micro_Socket XA1
+U 1 1 5CDD10A0
+P 2800 2400
+F 0 "XA1" H 2800 3637 60  0000 C CNN
+F 1 "Arduino_Micro_Socket" H 2800 3531 60  0000 C CNN
+F 2 "Arduino:Arduino_Micro_Socket" H 4600 6150 60  0001 C CNN
+F 3 "https://store.arduino.cc/arduino-micro" H 4600 6150 60  0001 C CNN
+	1    2800 2400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1500 3300
+NoConn ~ 1500 3100
+NoConn ~ 1500 2100
+NoConn ~ 1500 2200
+NoConn ~ 1500 2300
+NoConn ~ 1500 2400
+NoConn ~ 1500 2500
+NoConn ~ 1500 2600
+NoConn ~ 1500 2700
+NoConn ~ 1500 1500
+NoConn ~ 1500 1600
+NoConn ~ 1500 1800
+NoConn ~ 1500 1900
+NoConn ~ 4100 3200
+NoConn ~ 4100 3100
+NoConn ~ 4100 2900
+NoConn ~ 4100 2800
+NoConn ~ 4100 2700
+NoConn ~ 4100 2600
+Wire Wire Line
+	5700 2700 5500 2700
+Wire Wire Line
+	5500 2700 5500 1900
+Wire Wire Line
+	5500 1900 4100 1900
+Wire Wire Line
+	5700 2900 5400 2900
+Wire Wire Line
+	5400 2900 5400 2000
+Wire Wire Line
+	5400 2000 4100 2000
+Wire Wire Line
+	5700 2500 5600 2500
+Wire Wire Line
+	5600 2500 5600 1800
+Wire Wire Line
+	5600 1800 4100 1800
+Wire Wire Line
+	4100 1700 5700 1700
+Wire Wire Line
+	5700 1700 5700 2300
+Wire Wire Line
+	4100 2100 5300 2100
+Wire Wire Line
+	5300 2100 5300 5700
+Wire Wire Line
+	5300 5700 5700 5700
+Wire Wire Line
+	5700 5900 5200 5900
+Wire Wire Line
+	5200 5900 5200 2200
+Wire Wire Line
+	5200 2200 4100 2200
+Wire Wire Line
+	4100 2300 5100 2300
+Wire Wire Line
+	5100 2300 5100 5300
+Wire Wire Line
+	5100 5300 5700 5300
+Wire Wire Line
+	5700 5500 5000 5500
+Wire Wire Line
+	5000 5500 5000 2400
+Wire Wire Line
+	5000 2400 4100 2400
+NoConn ~ 4100 1500
+NoConn ~ 4100 1600
+NoConn ~ 9000 3200
+NoConn ~ 9000 3100
+NoConn ~ 9000 3000
+NoConn ~ 9000 2800
+NoConn ~ 9000 2600
+NoConn ~ 9000 2500
+NoConn ~ 9000 1700
+NoConn ~ 9000 1600
+NoConn ~ 9000 1500
+NoConn ~ 9000 1300
+NoConn ~ 9000 1100
+NoConn ~ 9000 1000
+$EndSCHEMATC
