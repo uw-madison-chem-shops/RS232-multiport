@@ -1,6 +1,4 @@
-# MQTT particle sensor
-
-Designed to work with [mqtt.chem.wisc.edu](https://mqtt.chem.wisc.edu/).
+# RS232 Multiport
 
 ## Repository
 
